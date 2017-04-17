@@ -85,7 +85,7 @@ exports.encodeMessage = function (messageObj,splitChar, gwType) {
         returnMessage = encodedObj.join(splitChar);
         debugStr = encodedObj.join(';');
     }
-    
+
     messageObj.direction = 'OUT';
     messageObj.debugObj = {t: new Date().getTime(), s: debugStr};
 
@@ -106,7 +106,7 @@ exports.getCapabilities = function(inputStr) {
                         inputStr = null;
                     }
                 }
-                
+
             });
         }
 
@@ -210,7 +210,7 @@ exports.req_set = [
     {'id': '34', 'value': 'V_FLOW',                 'capabilities': {'type': 'other', 'sub_type': 'mysensors_water_flow', 'parse_value': 'number'}},
     {'id': '35', 'value': 'V_VOLUME',               'capabilities': {'type': 'sensor', 'sub_type': 'meter_water', 'parse_value': 'number'}},
     {'id': '36', 'value': 'V_LOCK_STATUS',          'capabilities': {'type': '', 'sub_type': '', 'parse_value': ''}},
-    {'id': '37', 'value': 'V_LEVEL',                'capabilities': {'type': 'sensor', 'sub_type': 'measure_luminance', 'parse_value': 'number'}},
+    {'id': '37', 'value': 'V_LEVEL',                'capabilities': {'type': 'sensor', 'sub_type': '', 'parse_value': 'number'}},
     {'id': '38', 'value': 'V_VOLTAGE',              'capabilities': {'type': '', 'sub_type': '', 'parse_value': ''}},
     {'id': '39', 'value': 'V_CURRENT',              'capabilities': {'type': '', 'sub_type': '', 'parse_value': ''}},
     {'id': '40', 'value': 'V_RGB',                  'capabilities': {'type': '', 'sub_type': '', 'parse_value': ''}},
